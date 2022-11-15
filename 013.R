@@ -18,3 +18,6 @@ test_set = subset(dataset, split == FALSE)
 # Fitting Multiple Linear Regression
 regressor = lm(formula = Profit ~ ., 
                data = training_set)
+
+# Predicting the Test set results
+y_pred = predict(regressor, newdata = test_set)
